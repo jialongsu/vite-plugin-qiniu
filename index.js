@@ -2,7 +2,7 @@
  * @Author: Arno.su
  * @Date: 2021-11-24 16:06:04
  * @LastEditors: Arno.su
- * @LastEditTime: 2022-10-20 14:43:40
+ * @LastEditTime: 2022-10-20 16:03:04
  */
 const qiniu = require('qiniu');
 const path = require('path');
@@ -66,7 +66,7 @@ class QiuniuPlugin {
     } = this.qiniu.options;
     const resourceList = await this.qiniu.getResouceList(projectName); // 获取之前上传七牛的文件
     const deleteAry = forceDelete ? resourceList : lodash.difference(resourceList, uploadFilePathAry); // 获取需要先在七牛上删除的文件
-    const uploadAry = forceDelete ? resourceList : lodash.difference(uploadFilePathAry, resourceList); // 获取需要上传的文件
+    const uploadAry = forceDelete ? uploadFilePathAry : lodash.difference(uploadFilePathAry, resourceList); // 获取需要上传的文件
 
     if (deleteAry.length > 1) {
       await this.qiniu.batchDeleteFile(deleteAry); // 删除文件
