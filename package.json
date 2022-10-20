@@ -1,0 +1,34 @@
+{
+  "name": "vite-plugin-qiniu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jialongsu/vite-plugin-qiniu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jialongsu/vite-plugin-qiniu/issues"
+  },
+  "homepage": "https://github.com/jialongsu/vite-plugin-qiniu#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "lodash": "^4.17.21",
+    "qiniu": "^7.7.0"
+  },
+  "files": [
+    "src",
+    "index.d.ts",
+    "index.js"
+  ],
+  "devDependencies": {
+    "vite": "^3.1.8"
+  }
+}
