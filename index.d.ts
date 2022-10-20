@@ -2,7 +2,7 @@
  * @Author: Arno.su
  * @Date: 2021-11-24 18:20:33
  * @LastEditors: Arno.su
- * @LastEditTime: 2022-10-20 17:28:56
+ * @LastEditTime: 2022-10-20 17:30:50
  */
 import { Plugin } from 'vite';
 
@@ -24,7 +24,7 @@ interface Options {
    */
   forceDelete?: boolean;
   /**
-   * 上传文件的根目录名称，默认为项目名称
+   * 文件上传的根目录名称，默认为项目名称
    */
   rootName?: string;
   /**
