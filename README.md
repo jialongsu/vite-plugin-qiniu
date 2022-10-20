@@ -5,11 +5,11 @@
 ## 安装
 
 ```sh
-npm install -D qiniu-s-webpack-plugin
+npm install -D vite-plugin-qiniu
 
 or 
 
-yarn add -D qiniu-s-webpack-plugin
+yarn add -D vite-plugin-qiniu
 ```
 
 ## 使用
