@@ -24,7 +24,7 @@ export default defineConfig({
       accessKey: '',
       secretKey: '', 
       bucket: '', 
-      forceDelete: true 
+      forceDelete: true
     }),
   ],
 });
@@ -38,3 +38,5 @@ export default defineConfig({
 |  secretKey   |  string   |  ''  |  true   |  七牛 Secret Key   |
 |  bucket   |  string   |  ''   |   true  |  七牛 空间名   |
 |  forceDelete   |  boolean   |  false   |  false   |  上传文件前，先强制删除之前上传七牛云上的文件   |
+|  rootName   |  string   |  '项目名称'   |  false   |  上传文件的根目录名称  |
+|  isLog   |  boolean   |  false   |  false   |  是否打印上传日志   |

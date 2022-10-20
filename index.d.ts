@@ -2,7 +2,7 @@
  * @Author: Arno.su
  * @Date: 2021-11-24 18:20:33
  * @LastEditors: Arno.su
- * @LastEditTime: 2022-10-20 17:11:17
+ * @LastEditTime: 2022-10-20 17:28:56
  */
 import { Plugin } from 'vite';
 
@@ -28,7 +28,7 @@ interface Options {
    */
   rootName?: string;
   /**
-   * 是否输出上传日志，默认为false
+   * 是否打印上传日志，默认为false
    */
   isLog?: boolean;
 }
